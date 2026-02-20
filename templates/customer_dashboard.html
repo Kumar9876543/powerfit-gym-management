@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>My Membership Details</h2>
+
+<p>Name: {{ member.user.username }}</p>
+<p>Plan: {{ member.plan.name }}</p>
+<p>Joining Date: {{ member.joining_date }}</p>
+<p>Expiry Date: {{ member.expiry_date }}</p>
+
+{% if member.expiry_date < today %}
+    <span class="text-danger">Expired</span>
+{% else %}
+    <span class="text-success">Active</span>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2 class="mb-4 text-center">Our Trainers</h2>
+
+<div class="row">
+    {% for trainer in trainers %}
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="{{ trainer.image.url }}" class="card-img-top" alt="{{ trainer.name }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ trainer.name }}</h5>
+                <p class="card-text">
+                    Specialization: {{ trainer.specialization }}<br>
+                    Experience: {{ trainer.experience }} years<br>
+                    Fee: ₹{{ trainer.fee_per_month }}
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
