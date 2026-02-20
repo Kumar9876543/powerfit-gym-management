@@ -126,7 +126,7 @@ python manage.py runserver
 ![Home Page](screenshots/home.png)
 ![login page](screenshots/login.png)
 ![member_list](screenshots/member_list.png)
-![add_member](screenshots/addmember.png)
+![add_member](screenshots/add_member.png)
 ![about_page](screenshots/about.png)
 ![contact_page](screenshots/contact.png)
 
