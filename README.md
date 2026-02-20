@@ -123,12 +123,11 @@ python manage.py runserver
 ## 📸 Screenshots
 
 
-![Home Page](home.png)
-![about Page](about.png)
-![add member Page](screenshots/add member.png)
-![contact](contact.png)
-![login](login.png)
-![member_list](member_list.png)
+homepage : 
+login page :
+member_list:
+add_member:
+about_page : 
 
 
 ---
